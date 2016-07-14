@@ -1,0 +1,193 @@
+/*html, body {
+    margin:0px; padding:0px;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
+
+header { /*header <-- removing this broke the layout of the tribute feature... */
+    z-index: 1; /* higher is on top http://www.w3schools.com/cssref/pr_pos_z-index.asp */
+    position:fixed; 
+    width:100%; 
+    height:45px; 
+    background:rgba(146,167,48,0.4); /* "lotus green" color sampled from lotus photo (using Photoshop 7) */
+    /* would ike to be able to change button color, navbar color, etc based on which feature area is being displayed. not neccesary here though.*/
+}
+
+#feature1 {
+    background:url(http://bit.ly/298Id3b); /* lotus pond */ 
+    background-size:cover; /* Scale the background image to be as large as possible so that the background area is completely covered by the background image. Some parts of the background image may not be in view within the background positioning area */
+    background-position:center center; /* xpos ypos */
+    background-attachment:fixed; /* http://www.w3schools.com/cssref/pr_background-attachment.asp The background is fixed with regard to the viewport */
+}
+
+#feature2 {
+    background:url(http://bit.ly/29yVwLm); /* sunset */
+    background-size:cover; /* just to try different setting: Scale the image to the largest size such that both its width and its height can fit inside the content area	Play it »
+*/
+    background-position:center center; /* If you only specify one keyword, the other value will be "center"... didnt seem to work well */
+    background-attachment:fixed;
+}
+
+#feature3 {
+    background:url(http://bit.ly/29mHjCj); /* oak branches */
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+}
+
+#feature4 {
+    background:url(http://bit.ly/29kg11Y); /* clouds  */
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+}
+
+.feature/*, .content*/ {
+    text-align:center; 
+    position:relative;
+    width:100%;
+    /*border:2px solid yellow;*/
+}
+
+.inner {
+    /*min-height:1000px;*/
+    position:relative;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .inner {
+        min-height:1000px;
+        }
+}
+
+/* base 64 data URIs for embedding images directly (an 'inlined image') into HTML or CSS 
+format -> data:[<mime type>][;charset=<charset>][;base64],<encoded data>
+re: MIME (Multipurpose Internet Mail Extensions) Type see https://en.wikipedia.org/wiki/Media_type
+MIME type: type = image, subtype = png, optional parameter ('character (?) encoding') = base64, data = iVBORw0KG...
+The png image encoded in the data url below was created by me in Photoshop 7 (yes, 7!). It is 3x2 transparent with 
+some gradient applied. I used Chrome to encode in base 64 (open .png in chrome, in dev tools resources panel, find 
+image in tree, right click on image, select 'copy image as data url'. Image code will be in the clipboard. )
+*/
+.feature .inner {
+background: rgba(10,10,10,0.15) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAAHqc1aMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAIUlEQVR42mL4//8/A0AAMYAIgAACEwABxAgEAgxQABBgAL0dCQzKquJ9AAAAAElFTkSuQmCC)
+repeat;
+}
+
+.content {
+    position:absolute; 
+    top:50%; 
+    height:10em; 
+    margin-top:-5em; 
+    width:100%;
+}
+
+.btn {
+    font-family:'Baloo Bhai', cursive;
+}
+
+.btn-info {
+    background-color:rgb(183,83,207); /* "lotus color" sampled from lotus photo */
+    color:white;  
+}
+
+.btn-primary {
+    background-color:rgba(146,167,48,0.6); /* "lotus green" color sampled from lotus photo */
+}
+
+#homeContainer .btn-primary {
+    color:rgb(230,136,10); /* "lotus red-orange" color sampled from lotus photo */
+    -webkit-text-stroke: 0.5px black;
+    margin: 50px 0px 0px 0px;
+}
+
+#contactContainer .btn-primary {
+    color:rgb(183,83,207);
+    /*color:rgb(45,69,107);*/
+    -webkit-text-stroke: 0.5px black;
+    margin-bottom:8px;
+}
+
+h1 {
+    font-family:'Baloo Bhai', cursive;
+    /*font-size:4.5em;*/
+    color:rgb(183,83,207);
+    -webkit-text-stroke: 1px white; /* https://css-tricks.com/adding-stroke-to-web-text/ */
+    /*text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;*/
+    }
+
+h2 {
+    font-family:'Open Sans', sans-serif;
+    /*font-size:1.75em;*/
+    color:white; /*rgb(230,136,10);*/
+}
+
+h3 {
+    font-family:'Open Sans', sans-serif;
+    font-size:2.75em;
+    color:white;
+}
+
+#copy {
+    text-align:left;
+    font-family:'Permanent Marker', cursive;
+    font-size:1.25em;             
+    color:rgb(146,167,48);
+    -webkit-text-stroke: 1.25px black;
+    /*color:gold;*/
+}
+
+/*#portrait {
+    width: 150px;
+}*/
+
+#topHeaderRow {
+    margin:5px 0px;
+}
+
+#mainButtonArea {
+    margin-top: 25px;
+}
+
+/* having to do this (to adjust vertically, from too low) has to be wrong... */
+#homeContentColumn { 
+    position: absolute;
+    top: 10%; 
+}
+
+/*#aboutRow {
+    position: absolute;
+    top: -175px;
+    left: 350px;
+}
+
+#portfolioRow {
+    position: absolute;
+    top: -175px;
+    left: 50px
+}*/
+
+#portfolioContainer img {
+    margin: 10px 10px 10px 10px;
+}
+
+/*#contactRow {
+    text-align: left;
+    position: absolute;
+    top: -175px;
+    left: 350px;
+}*/
+
+#contactRowEmailDiv {
+    margin-bottom:16px;
+}
+

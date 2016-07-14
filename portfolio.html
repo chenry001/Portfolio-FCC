@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- , shrink-to-fit=no -->
+  <title>Project: Portfolio 7</title>
+  <!-- now has full page backgrounds with bootstrap withing each, no overall container-fluid. V5 is to remove unneccesary code -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/9a4259c053.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>   
+  <!--<script src=".\portfolio3.js"></script>-->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet"> <!-- font-family: 'Baloo Bhai', cursive; -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!-- font-family: 'Open Sans', sans-serif; -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet"> <!-- font-family: 'Kavivanar', cursive; -->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> <!-- font-family: 'Permanent Marker', cursive; -->
+  <link rel="stylesheet" type="text/css" href="portfolio7.css">
+  <style></style>
+</head>
+<body>
+
+<!-- ####### Header ####### -->
+<header>
+  <div id="topHeaderRow" class="row"> 
+    <div class="col-md-4 col-md-offset-7">
+      <div class="btn-group btn-group-md">
+        <a href="#feature1" target="_self"><button type="button" class="btn btn-info">Home</button></a>
+        <a href="#feature2" target="_self"><button type="button" class="btn btn-info">About</button></a>
+        <a href="#feature3" target="_self"><button type="button" class="btn btn-info">Portfolio</button></a>
+        <a href="#feature4" target="_self"><button type="button" class="btn btn-info">Contact</button></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ####### Feature Area 1 ####### --> 
+<!-- a 'feature' being an area with fixed background and 'full page' display -->
+<section id="feature1" class="feature">
+  <div class="inner">
+    <div class="container-fluid" id="homeContainer">
+      <div class="row"> 
+        <div class="col-xs-6" id="homeContentColumn">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Christopher Henry's Portfolio</h1>
+            </div>
+            <div class="col-xs-12" id="homeSubHeading">
+              <h2>Newbie Programmer, Software & Payment Industries Veteren</h2>
+            </div>
+            <div class="col-xs-12">
+              <div class="btn-group btn-group-vertical">
+                <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code"></i> FreeCodeCamp</button>
+                <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook-official"></i> Facebook</button>
+                <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-codepen"></i> Codepen.io</button>
+                <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github-alt"></i> Github</button>
+                <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-linkedin-square"></i> LinkedIn</button>
+                <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-wordpress"></i> B.J.B. Clique</button>
+              </div> <!-- end .btn-group -->
+            </div>
+          </div> <!-- end .row -->
+        </div> <!-- end #homeContentColumn -->
+      </div> <!-- end .row -->
+    </div> <!-- end #homeContainer.container -->
+  </div> <!-- end .inner -->
+</section> <!-- end #feature1.feature -->
+
+<!-- ####### Feature Area 2 ####### -->
+<section id="feature2" class="feature">
+  <div class="inner">
+    <!--<div class="content"> -->
+      <div id="aboutContainer" class="container-fluid"> 
+        <div class="row" id="aboutRow"> 
+          <<!-- tried a spacer div here... -->
+          <div class="col-lg-4" id="copy">Integer mollis quam nec massa tincidunt, eu tincidunt nisl congue. Proin congue augue eu mauris dapibus tempus. Praesent mattis ipsum in massa semper hendrerit placerat vitae dolor. Phasellus id odio vel turpis iaculis eleifend. Pellentesque tincidunt, erat vel ultricies convallis, odio risus faucibus dui, eget efficitur lorem risus ac erat. Integer mollis, justo eu interdum ultrices, ex elit congue erat, quis finibus arcu neque a sem. Sed sit amet urna lacus. Nullam ac molestie quam.</div>
+          <div class="col-lg-2"><img src="http://bit.ly/295LAei" id="portrait" class="img-responsive img-center img-circle" alt="a picture of me in a tuxedo (a head and top of the shoulders shot)"></div>
+        </div> <!-- end #aboutRow --> 
+      </div> <!-- end #aboutContainer.container -->
+    <!--</div>--> <!-- end .content -->
+  </div> <!-- end .inner -->
+</section> <!-- end #feature2.feature -->
+
+<!-- ####### Feature Area 3 ####### -->
+<section id="feature3" class="feature">
+  <div class="inner">
+    <!--<div class="content">-->
+      <div id="portfolioContainer" class="container-fluid">
+        <div class="row" id="portfolioRow">
+          <div class="col-xs-6 col-sm-3 col-md-4">
+            <a href="http://bit.ly/1YpHDDz" target="_blank"><img src="http://bit.ly/1ro1khI" class="img-responsive img-thumbnail" border="0" alt="image and link to Holdsworth tribute page"/></a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-4">
+            <a href="http://bit.ly/28C64Cd" target="_blank"><img src="http://bit.ly/1ZOxXRo" class="img-responsive img-thumbnail" border="0" alt="image and link to bjb clique blog"/></a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-4">
+            <a href="#" target="_blank"><img src="http://bit.ly/28KUABP" class="img-responsive img-thumbnail" border="0" alt="image of television static and the words Coming Soon, a dead link for now"/></a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-4">
+            <a href="#" target="_blank"><img src="http://bit.ly/28KUABP" class="img-responsive img-thumbnail" border="0" alt="image of television static and the words Coming Soon, a dead link for now"/></a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-4">
+            <a href="#" target="_blank"><img src="http://bit.ly/28KUABP" class="img-responsive img-thumbnail" border="0" alt="image of television static and the words Coming Soon, a dead link for now"/></a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-4">
+            <a href="#" target="_blank"><img src="http://bit.ly/28KUABP" class="img-responsive img-thumbnail" border="0" alt="image of television static and the words Coming Soon, a dead link for now"/></a>
+          </div>
+        </div> <!-- end portfolio row -->
+      </div> <!-- end #portfolioContainer.container -->
+    <!--</div>-->
+  </div>
+</section>
+
+<!-- ####### Feature Area 4 ####### --> 
+<section id="feature4" class="feature">
+  <div class="inner">
+    <!--<div class="content">-->
+    <div id="contactContainer" class="container-fluid">
+      <div class="row" id="contactRow">
+        <div class="col-md-12" id="contactRowEmailDiv">
+          <h3>CONNECT WITH CHRIS:<br>christopherhenry001@gmail.com</h3><!--<button type="button" class="btn btn-sm"><i class="fa fa-files-o"></i> copy to clipboard</button>-->
+        </div>
+        <div class="col-md-3 btn-group btn-group-vertical">
+          <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code"></i> FreeCodeCamp</button>
+          <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook-official"></i> Facebook</button>
+          <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-codepen"></i> Codepen.io</button>
+          <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github-alt"></i> Github</button>
+          <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-linkedin-square"></i> LinkedIn</button>
+          <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-wordpress"></i> B.J.B. Clique</button>
+        </div> <!-- end col=md=12.btn-group.btn-group-vertical -->
+      </div> <!-- end #contactRow -->
+    </div> <!-- end #contactContainer.container -->
+    <!--</div>--> <!-- end .content -->
+  </div> <!-- end .inner -->
+</section> <!-- end #feature4.feature -->
+
+</body>
+</html>
